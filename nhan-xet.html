@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chấm điểm cho chất lượng của chúng tôi nhé</title>
+  <link rel="stylesheet" href="static/evn/css/bootstrap-rating.css">
+  <link rel="stylesheet" href="static/star/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="static/star/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/star/css/fontawesome-stars.css">
+  <link rel="stylesheet" href="static/evn/css/main.min.css">
+  <link rel="stylesheet" href="static/evn/css/dash_kit_theme.min.css" />
+  <link rel="stylesheet" href="static/star/css/css-stars.css">
+  <style>
+    @font-face {
+      font-family: 'Glyphicons Halflings';
+      src: url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot');
+      src: url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff') format('woff'),
+        url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+    }
+  </style>
+  <style>
+    .br-theme-bootstrap-stars .br-widget {
+      height: 35px;
+      white-space: nowrap;
+    }
+
+    .br-theme-bootstrap-stars .br-widget a {
+      font: normal normal normal 30px/1 'Glyphicons Halflings';
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+      margin-right: 2px;
+    }
+
+    .br-theme-bootstrap-stars .br-widget a:after {
+      content: '\e006';
+      color: #d2d2d2;
+    }
+
+    .br-theme-bootstrap-stars .br-widget a.br-active:after {
+      color: #EDB867;
+    }
+
+    .br-theme-bootstrap-stars .br-widget a.br-selected:after {
+      color: #EDB867;
+    }
+
+    .br-theme-bootstrap-stars .br-widget .br-current-rating {
+      display: none;
+    }
+
+    .br-theme-bootstrap-stars .br-readonly a {
+      cursor: default;
+    }
+
+    @media print {
+      .br-theme-bootstrap-stars .br-widget a:after {
+        content: '\e007';
+        color: black;
+      }
+
+      .br-theme-bootstrap-stars .br-widget a.br-active:after,
+      .br-theme-bootstrap-stars .br-widget a.br-selected:after {
+        content: '\e006';
+        color: black;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-content" id="main-content">
+    <div class="container-fluid">
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <form style="margin-top: 0em;" method="post"
+            enctype="multipart/form-data">
+
+            <!-- Card -->
+            <div class="card">
+
+              <img src="EVN.jpg" alt="" class="card-img-top" style="height: 250px">
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Image -->
+                <a href="#" class="avatar avatar-xl card-avatar card-avatar-top">
+                  <img src="evnhn.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="...">
+                </a>
+                <div class="form-group mb-3" style="text-align: center;">
+                  <h1><i>Vui lòng góp ý để EVNHANOI tiếp thu ý kiến và hoàn thiện dịch vụ tốt hơn nữa:</i</h1>
+                  <textarea class="form-control" id="comment" name="comment"></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary btn-block text-uppercase">
+                  
+                  Gửi 
+                  
+              </button>
+              </div>
+              <!-- Footer -->
+              <div class="card-footer card-footer-boxed">
+                <div class="row align-items-center justify-content-between">
+                  <div class="col text-center">
+                    <!-- Status -->
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="static/star/js/jquery-3.3.1.min.js"></script>
+  <script src="static/star/js/bootstrap.min.js"></script>
+  <script src="static/evn/js/jquery.barrating.min.js"></script>
+  <script>
+    $(function () {
+      $('#rating').barrating('show', {
+        theme: 'bootstrap-stars'
+      });
+
+    })
+  </script>
+</body>
+
+</html>
